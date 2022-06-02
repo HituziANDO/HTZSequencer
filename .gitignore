@@ -72,3 +72,4 @@ Sample/Framework/*.framework
 .build
 docs/*
 !docs/badge.svg
+Output

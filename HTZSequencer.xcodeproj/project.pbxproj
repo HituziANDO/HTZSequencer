@@ -6,11 +6,28 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		5E1CCCA22848B6F5007874A4 /* HTZSequencerUniversal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5E1CCCA32848B6F5007874A4 /* Build configuration list for PBXAggregateTarget "HTZSequencerUniversal" */;
+			buildPhases = (
+				5E1CCCA62848B6FE007874A4 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = HTZSequencerUniversal;
+			productName = HTZSequencerUniversal;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		5E1CCC912848AD9B007874A4 /* HTZSequencer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1CCC882848AD9B007874A4 /* HTZSequencer.framework */; };
 		5E1CCC962848AD9B007874A4 /* HTZSequencerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1CCC952848AD9B007874A4 /* HTZSequencerTests.m */; };
 		5E1CCC972848AD9B007874A4 /* HTZSequencer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1CCC8B2848AD9B007874A4 /* HTZSequencer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E1CCCA12848AFC5007874A4 /* HTZSequencer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1CCCA02848AFC5007874A4 /* HTZSequencer.m */; };
+		5E1CCCAF2848B762007874A4 /* HTZSequencer_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1CCCAE2848B762007874A4 /* HTZSequencer_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E1CCCB32848B7B5007874A4 /* HTZSequencer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1CCCA02848AFC5007874A4 /* HTZSequencer.m */; };
+		5E1CCCB42848B7D3007874A4 /* HTZSequencer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1CCC8B2848AD9B007874A4 /* HTZSequencer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +46,8 @@
 		5E1CCC902848AD9B007874A4 /* HTZSequencerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTZSequencerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E1CCC952848AD9B007874A4 /* HTZSequencerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTZSequencerTests.m; sourceTree = "<group>"; };
 		5E1CCCA02848AFC5007874A4 /* HTZSequencer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTZSequencer.m; sourceTree = "<group>"; };
+		5E1CCCAC2848B762007874A4 /* HTZSequencer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HTZSequencer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E1CCCAE2848B762007874A4 /* HTZSequencer_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTZSequencer_macOS.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +66,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5E1CCCA92848B762007874A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -54,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				5E1CCC8A2848AD9B007874A4 /* HTZSequencer */,
+				5E1CCCAD2848B762007874A4 /* HTZSequencer macOS */,
 				5E1CCC942848AD9B007874A4 /* HTZSequencerTests */,
 				5E1CCC892848AD9B007874A4 /* Products */,
 			);
@@ -64,6 +91,7 @@
 			children = (
 				5E1CCC882848AD9B007874A4 /* HTZSequencer.framework */,
 				5E1CCC902848AD9B007874A4 /* HTZSequencerTests.xctest */,
+				5E1CCCAC2848B762007874A4 /* HTZSequencer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +113,14 @@
 			path = HTZSequencerTests;
 			sourceTree = "<group>";
 		};
+		5E1CCCAD2848B762007874A4 /* HTZSequencer macOS */ = {
+			isa = PBXGroup;
+			children = (
+				5E1CCCAE2848B762007874A4 /* HTZSequencer_macOS.h */,
+			);
+			path = "HTZSequencer macOS";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,6 +129,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E1CCC972848AD9B007874A4 /* HTZSequencer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E1CCCA72848B762007874A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1CCCAF2848B762007874A4 /* HTZSequencer_macOS.h in Headers */,
+				5E1CCCB42848B7D3007874A4 /* HTZSequencer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +180,24 @@
 			productReference = 5E1CCC902848AD9B007874A4 /* HTZSequencerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		5E1CCCAB2848B762007874A4 /* HTZSequencer macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E1CCCB02848B762007874A4 /* Build configuration list for PBXNativeTarget "HTZSequencer macOS" */;
+			buildPhases = (
+				5E1CCCA72848B762007874A4 /* Headers */,
+				5E1CCCA82848B762007874A4 /* Sources */,
+				5E1CCCA92848B762007874A4 /* Frameworks */,
+				5E1CCCAA2848B762007874A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HTZSequencer macOS";
+			productName = "HTZSequencer macOS";
+			productReference = 5E1CCCAC2848B762007874A4 /* HTZSequencer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +212,12 @@
 						CreatedOnToolsVersion = 13.4;
 					};
 					5E1CCC8F2848AD9B007874A4 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					5E1CCCA22848B6F5007874A4 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					5E1CCCAB2848B762007874A4 = {
 						CreatedOnToolsVersion = 13.4;
 					};
 				};
@@ -167,7 +236,9 @@
 			projectRoot = "";
 			targets = (
 				5E1CCC872848AD9B007874A4 /* HTZSequencer */,
+				5E1CCCAB2848B762007874A4 /* HTZSequencer macOS */,
 				5E1CCC8F2848AD9B007874A4 /* HTZSequencerTests */,
+				5E1CCCA22848B6F5007874A4 /* HTZSequencerUniversal */,
 			);
 		};
 /* End PBXProject section */
@@ -187,7 +258,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5E1CCCAA2848B762007874A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E1CCCA62848B6FE007874A4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# 出力先ディレクトリ（プロジェクトの直下）\nOUTPUT_DIR=${PROJECT_DIR}/Output\n\n# 中間ファイルの出力先ディレクトリ\nDERIVED_DIR=${OUTPUT_DIR}/${CONFIGURATION}-derived\n\n# archiveの出力先ディレクトリ\nARCHIVE_DIR=${OUTPUT_DIR}/${CONFIGURATION}-archive\n\n# xcframeworkの出力先ディレクトリ\nXCFRAMEWORK_DIR=${OUTPUT_DIR}/${CONFIGURATION}-xcframework\n\n# 出力先ディレクトリ削除\nrm -rf ${OUTPUT_DIR}\n\n# 中間ファイルの出力先ディレクトリ作成\nmkdir -p ${DERIVED_DIR}\n\n# アーカイブファイルの出力先ディレクトリ作成\nmkdir -p ${ARCHIVE_DIR}\n\n# xcframeworkの出力先ディレクトリ作成\nmkdir -p ${XCFRAMEWORK_DIR}\n\n# iOS実機用のarchiveファイル\nARCHIVE_FILE_IOS=${ARCHIVE_DIR}/ios.xcarchive\necho \"ARCHIVE_FILE_IOS:${ARCHIVE_FILE_IOS}\"\n\n# iOSシミュレータ用のarchiveファイル\nARCHIVE_FILE_IOS_SIMULATOR=${ARCHIVE_DIR}/iossimulator.xcarchive\necho \"ARCHIVE_FILE_IOS_SIMULATOR:${ARCHIVE_FILE_IOS_SIMULATOR}\"\n\n# macCatalyst用のarchiveファイル\nARCHIVE_FILE_IOS_MACCATALYST=${ARCHIVE_DIR}/maccatalyst.xcarchive\necho \"ARCHIVE_FILE_IOS_MACCATALYST:${ARCHIVE_FILE_IOS_MACCATALYST}\"\n\n# macOS用のarchiveファイル\nARCHIVE_FILE_MACOS=${ARCHIVE_DIR}/macos.xcarchive\necho \"ARCHIVE_FILE_MACOS:${ARCHIVE_FILE_MACOS}\"\n\n# iOS実機用のarchiveファイル作成\nxcodebuild archive \\\n-scheme ${PROJECT_NAME} \\\n-destination=\"iOS\" \\\n-archivePath $ARCHIVE_FILE_IOS \\\n-derivedDataPath $DERIVED_DIR \\\n-sdk iphoneos SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES\n\n# iOSシミュレータ用のarchiveファイル作成\nxcodebuild archive \\\n-scheme ${PROJECT_NAME} \\\n-destination=\"iOS Simulator\" \\\n-archivePath $ARCHIVE_FILE_IOS_SIMULATOR \\\n-derivedDataPath $DERIVED_DIR \\\n-sdk iphonesimulator SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES\n\n# macCatalyst用のarchiveファイル作成\nxcodebuild archive \\\n-scheme ${PROJECT_NAME} \\\n-destination='platform=macOS,arch=x86_64,variant=Mac Catalyst' \\\n-archivePath $ARCHIVE_FILE_IOS_MACCATALYST SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES\n\n# macOS用のarchiveファイル作成\nxcodebuild archive \\\n-scheme \"HTZSequencer macOS\" \\\n-destination=\"platform=macOS\" \\\n-archivePath $ARCHIVE_FILE_MACOS \\\n-derivedDataPath $DERIVED_DIR \\\nSKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES\n\n# xcframework作成\nxcodebuild -create-xcframework \\\n-framework $ARCHIVE_FILE_IOS/Products/Library/Frameworks/${PROJECT_NAME}.framework \\\n-framework $ARCHIVE_FILE_IOS_SIMULATOR/Products/Library/Frameworks/${PROJECT_NAME}.framework \\\n-framework $ARCHIVE_FILE_IOS_MACCATALYST/Products/Library/Frameworks/${PROJECT_NAME}.framework \\\n-framework $ARCHIVE_FILE_MACOS/Products/Library/Frameworks/${PROJECT_NAME}.framework \\\n-output $XCFRAMEWORK_DIR/${PROJECT_NAME}.xcframework\n\n# xcframeworkの出力ディレクトリをFinderで開く\nopen ${XCFRAMEWORK_DIR}\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5E1CCC842848AD9B007874A4 /* Sources */ = {
@@ -203,6 +301,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E1CCC962848AD9B007874A4 /* HTZSequencerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E1CCCA82848B762007874A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1CCCB32848B7B5007874A4 /* HTZSequencer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +450,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Hituzi Ando. All rights reserved.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -371,7 +477,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Hituzi Ando. All rights reserved.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -417,6 +523,78 @@
 			};
 			name = Release;
 		};
+		5E1CCCA42848B6F5007874A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5E1CCCA52848B6F5007874A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5E1CCCB12848B762007874A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 220602;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Hituzi Ando. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.hituzi.HTZSequencer;
+				PRODUCT_NAME = HTZSequencer;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		5E1CCCB22848B762007874A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 220602;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Hituzi Ando. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.hituzi.HTZSequencer;
+				PRODUCT_NAME = HTZSequencer;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -443,6 +621,24 @@
 			buildConfigurations = (
 				5E1CCC9E2848AD9B007874A4 /* Debug */,
 				5E1CCC9F2848AD9B007874A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E1CCCA32848B6F5007874A4 /* Build configuration list for PBXAggregateTarget "HTZSequencerUniversal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E1CCCA42848B6F5007874A4 /* Debug */,
+				5E1CCCA52848B6F5007874A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E1CCCB02848B762007874A4 /* Build configuration list for PBXNativeTarget "HTZSequencer macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E1CCCB12848B762007874A4 /* Debug */,
+				5E1CCCB22848B762007874A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
