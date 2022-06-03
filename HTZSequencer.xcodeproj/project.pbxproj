@@ -25,7 +25,6 @@
 		5E1CCC962848AD9B007874A4 /* HTZSequencerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1CCC952848AD9B007874A4 /* HTZSequencerTests.m */; };
 		5E1CCC972848AD9B007874A4 /* HTZSequencer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1CCC8B2848AD9B007874A4 /* HTZSequencer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E1CCCA12848AFC5007874A4 /* HTZSequencer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1CCCA02848AFC5007874A4 /* HTZSequencer.m */; };
-		5E1CCCAF2848B762007874A4 /* HTZSequencer_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1CCCAE2848B762007874A4 /* HTZSequencer_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E1CCCB32848B7B5007874A4 /* HTZSequencer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1CCCA02848AFC5007874A4 /* HTZSequencer.m */; };
 		5E1CCCB42848B7D3007874A4 /* HTZSequencer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1CCC8B2848AD9B007874A4 /* HTZSequencer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -47,7 +46,6 @@
 		5E1CCC952848AD9B007874A4 /* HTZSequencerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTZSequencerTests.m; sourceTree = "<group>"; };
 		5E1CCCA02848AFC5007874A4 /* HTZSequencer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTZSequencer.m; sourceTree = "<group>"; };
 		5E1CCCAC2848B762007874A4 /* HTZSequencer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HTZSequencer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E1CCCAE2848B762007874A4 /* HTZSequencer_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTZSequencer_macOS.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +114,6 @@
 		5E1CCCAD2848B762007874A4 /* HTZSequencer macOS */ = {
 			isa = PBXGroup;
 			children = (
-				5E1CCCAE2848B762007874A4 /* HTZSequencer_macOS.h */,
 			);
 			path = "HTZSequencer macOS";
 			sourceTree = "<group>";
@@ -136,7 +133,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E1CCCAF2848B762007874A4 /* HTZSequencer_macOS.h in Headers */,
 				5E1CCCB42848B7D3007874A4 /* HTZSequencer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,7 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 220603;
+				CURRENT_PROJECT_VERSION = 22060301;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -457,7 +453,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.hituzi.HTZSequencer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -470,7 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 220603;
+				CURRENT_PROJECT_VERSION = 22060301;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -484,7 +480,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.hituzi.HTZSequencer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -544,7 +540,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 220603;
+				CURRENT_PROJECT_VERSION = 22060301;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -558,7 +554,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.hituzi.HTZSequencer;
 				PRODUCT_NAME = HTZSequencer;
 				SDKROOT = macosx;
@@ -572,7 +568,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 220603;
+				CURRENT_PROJECT_VERSION = 22060301;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -586,7 +582,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.hituzi.HTZSequencer;
 				PRODUCT_NAME = HTZSequencer;
 				SDKROOT = macosx;

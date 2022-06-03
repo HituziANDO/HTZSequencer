@@ -30,15 +30,6 @@
 
 #import <Foundation/Foundation.h>
 
-//! Project version number for HTZSequencer.
-FOUNDATION_EXPORT double HTZSequencerVersionNumber;
-
-//! Project version string for HTZSequencer.
-FOUNDATION_EXPORT const unsigned char HTZSequencerVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <HTZSequencer/PublicHeader.h>
-
-
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^HTZSequencerCompletion)(id _Nullable result, NSError *_Nullable error);
